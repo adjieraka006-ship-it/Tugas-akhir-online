@@ -1,0 +1,153 @@
+/* --- Basic Reset & Font Setup --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* --- Header Section --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.header-text {
+    flex-basis: 75%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+header p {
+    font-size: 15px;
+    color: #555;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --- Main Content Layout --- */
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.main-column {
+    flex: 2; /* Kolom kiri lebih besar */
+}
+
+.sidebar-column {
+    flex: 1; /* Kolom kanan lebih kecil */
+}
+
+/* --- Section Styling --- */
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #000;
+}
+
+/* --- Experience & Education Styling --- */
+.experience .job, .education {
+    margin-bottom: 25px;
+}
+
+.job-title, .education-major {
+    font-weight: 500;
+    color: #333;
+}
+
+.job-date, .education-date {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 5px;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.education-major {
+    font-weight: 400; /* Tidak bold seperti nama sekolah */
+}
+
+/* --- Sidebar Styling --- */
+.sidebar-column section {
+    margin-bottom: 25px;
+}
+
+.sidebar-column h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.sidebar-column p {
+    color: #444;
+    font-size: 14px;
+}
+
+.skills-section p strong {
+    font-weight: 700;
+    color: #000;
+}
+
+.link-box {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.link-box:hover {
+    background-color: #f0f0f0;
+}

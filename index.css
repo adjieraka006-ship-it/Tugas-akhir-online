@@ -1,0 +1,164 @@
+/* Reset CSS dan Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Warna latar belakang utama sedikit abu-abu */
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Bagian Header/Navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    position: fixed;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+/* Bagian Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.hero-text {
+    flex: 1; /* Mengambil ruang yang tersedia */
+}
+
+.greeting {
+    background-color: #f0e68c; /* Warna kuning muda */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Bagian Portofolio */
+.portfolio {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar gambar */
+    justify-content: center;
+}
+
+.portfolio-item {
+    flex-basis: calc(50% - 20px); /* 2 item per baris */
+    max-width: calc(50% - 20px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Bagian Kontak */
+.contact {
+    background-color: #f0f2f5;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Bagian Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Penyesuaian untuk layar kecil (Responsive) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-image {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .portfolio-item {
+        flex-basis: 100%; /* 1 item per baris di layar kecil */
+        max-width: 100%;
+    }
+}
+
+html {
+        scroll-behavior: smooth;
+      }
